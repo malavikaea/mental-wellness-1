@@ -1,18 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Auth from "./components/Auth.js";
+import Chatbot from "./components/Chatbot";
+import Playlists from "./components/Playlists";
+import "./App.css"; // Import CSS after other imports
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-       
-      </p>
-    </>
-  )
+    <Router>
+      <div className="container">
+        <h1>🌿 Mental Wellness Chatbot</h1>
+        <Routes>
+          <Route path="/" element={<Auth />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/playlists" element={<Playlists />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+

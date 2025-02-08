@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mood Selector */
+.mood-selector h2 {
+  font-size: 24px;
+}
+
+.emoji-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.emoji-button {
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 50%;
+}
+
+.emoji-button:hover {
+  transform: scale(1.2);
+  background: lightgray;
+}
+
+/* Music Button */
+.music-button {
+  padding: 10px 20px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.music-button:hover {
+  background: #ff4757;
+}
+
+/* Chatbot */
+.chatbot {
+  text-align: center;
+  padding: 20px;
+}
+
+.chatbox {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Playlist */
+.playlist-container {
+  padding: 20px;
+}
+
+.playlist-links a {
+  display: block;
+  color: white;
+  background: #ffcc00;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.playlist-links a:hover {
+  background: #ffdb4d;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #666;
+}
