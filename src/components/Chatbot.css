@@ -1,3 +1,4 @@
+/* 🌟 Chatbot Container */
 .chatbot-container {
     max-width: 500px;
     margin: auto;
@@ -7,45 +8,117 @@
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
   }
   
+  /* 💬 Chat Box (Scrollable) */
   .chatbox {
     height: 300px;
     overflow-y: auto;
-    background: #f5f5f5;
-    padding: 10px;
-    border-radius: 10px;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   
-  p.user {
+  /* 🧑 User Message */
+  .user-msg {
+    align-self: flex-end;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    max-width: 70%;
     text-align: right;
-    color: #333;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2193b0; /* Add border for chat-like box */
   }
   
-  p.bot {
+  /* 🤖 Bot Message */
+  .bot-msg {
+    align-self: flex-start;
+    background: linear-gradient(to right, #4f282e, #432431);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 0;
+    max-width: 70%;
     text-align: left;
-    color: #4caf50;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff7eb3; /* Add border for chat-like box */
   }
   
-  input {
-    width: 80%;
-    padding: 10px;
-    border: none;
+  /* 📜 Scrollbar Styling */
+  .chatbox::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chatbox::-webkit-scrollbar-thumb {
+    background: rgba(144, 121, 121, 0.2);
     border-radius: 5px;
+  }
+  
+  /* 📝 Input Box */
+  .input-container {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
   }
   
+  input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🚀 Send Button */
   button {
-    padding: 10px 15px;
+    padding: 12px 15px;
     background: #4caf50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
     cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
   }
   
   button:hover {
     background: #388e3c;
+    transform: scale(1.05);
+  }
+  
+  /* 🌟 Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 600px) {
+    .chatbot-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    input {
+      width: 100%;
+    }
   }
   
