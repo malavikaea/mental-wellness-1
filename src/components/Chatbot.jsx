@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react"; // ✅ Add this line
 import { useParams, useNavigate } from "react-router-dom";
 
 function Chatbot() {
@@ -19,4 +19,4 @@ function Chatbot() {
   );
 }
 
-export default Chatbot;
+export default Chatbot; // ✅ Ensure the component is exported

@@ -1,20 +1,20 @@
-
-import React from "react";
+//import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Auth from "./components/Auth.js";
-import Chatbot from "./components/Chatbot";
-import Playlists from "./components/Playlists";
-import "./App.css"; // Import CSS after other imports
+import Home from "./components/Home"; // ✅ Correct import
+import Chatbot from "./components/Chatbot"; // ✅ Correct import
+import Playlists from "./components/Playlists"; // ✅ Correct import
+import "./styles.css"; // Ensure your styles file exists
 
 function App() {
   return (
     <Router>
       <div className="container">
-        <h1>🌿 Mental Wellness Chatbot</h1>
+        <h1>🌿 Mental Wellness App</h1>
         <Routes>
-          <Route path="/" element={<Auth />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          <Route path="/playlists" element={<Playlists />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/chatbot/:mood" element={<Chatbot />} />
+
+          <Route path="/playlists/:mood" element={<Playlists />} />
         </Routes>
       </div>
     </Router>
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
-
