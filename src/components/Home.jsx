@@ -7,13 +7,13 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h1 className="title">🌿 Welcome to Your Wellness Space</h1>
+      <h1 className="title"> hey bestie!</h1>
 
       <div className="option-boxes">
         <div className="option-box chat-box" onClick={() => navigate("/chatbot")}>
           💬 How are you? <br />
           <span style={{ fontSize: "1rem", fontWeight: "normal" }}>
-            Want to talk? Click here to chat.
+            Want to talk? 
           </span>
         </div>
 

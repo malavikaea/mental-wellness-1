@@ -9,11 +9,11 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <h1>🌿 Mental Wellness App</h1>
+        
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/chatbot/:mood" element={<Chatbot />} />
-
+          
+          <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/playlists/:mood" element={<Playlists />} />
         </Routes>
       </div>
@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+//

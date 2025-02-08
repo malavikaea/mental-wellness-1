@@ -3,16 +3,16 @@ body {
   font-family: "Arial", sans-serif;
   text-align: center;
   background: "#FFC0CB";
-  color: white;
+  color: rgb(175, 128, 128);
   margin: 0;
   padding: 0;
 }
 
 /* Container */
 .container {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 100px;
   background: white;
   color: black;
   border-radius: 15px;
@@ -102,7 +102,7 @@ body {
   margin-top: 15px;
   padding: 10px;
   background: #444;
-  color: white;
+  color: rgb(157, 140, 140);
   border: none;
   border-radius: 10px;
   cursor: pointer;

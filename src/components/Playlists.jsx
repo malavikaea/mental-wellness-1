@@ -1,24 +1,42 @@
-//import React from "react";
-import { useParams } from "react-router-dom";
+import  { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Playlists.css"; // Import styles
 
 const playlists = {
-  happy: "https://open.spotify.com/playlist/happy_playlist",
-  neutral: "https://open.spotify.com/playlist/neutral_playlist",
-  sad: "https://open.spotify.com/playlist/sad_playlist",
+  "😊": { name: "Happy Vibes", link: "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=mM0R93L6SbKNxTzUar_IPg&pi=TDnQO27nRgOxm" },
+  "😌": { name: "Chill & Relax", link: "https://open.spotify.com/playlist/37i9dQZF1DWWNKU278VyNu?si=BXSrMaC4Ti22-AzG7dOUNA&pi=v0ifKpdlR3-uX" },
+  "😢": { name: "Mood Booster", link: "https://open.spotify.com/playlist/37i9dQZF1DX3rxVfibe1L0?si=C9UFSrCHSYakmE_t8f-0-w&pi=sVqYwlWYQTGFh" },
+  "🧘🏻‍♀️": { name: "Meditatiion", link: "https://open.spotify.com/playlist/37i9dQZF1DWZqd5JICZI0u?si=eO68Zy84R16n0TjtSxWMqQ&pi=5xxhWrY4SUyhi" },
+  "💖": { name: "Love & Romance", link: "https://open.spotify.com/playlist/37i9dQZF1DWY7EoqMbT7wZ?si=JH0gTKUURw2melT2uN8WLg&pi=7e0mLUdARYmK-" },
 };
 
 function Playlists() {
-  const { mood } = useParams(); // Get mood from URL
-
-  const playlistLink = playlists[mood] || "https://open.spotify.com/playlist/default_playlist";
+  const [selectedMood, setSelectedMood] = useState(null);
+  const navigate = useNavigate();
 
   return (
-    <div>
-      <h3>Playlist for Your Mood</h3>
-      <p>Detected Mood: <strong>{mood}</strong></p>
-      <a href={playlistLink} target="_blank" rel="noopener noreferrer">
-        Open {mood.charAt(0).toUpperCase() + mood.slice(1)} Playlist
-      </a>
+    <div className="playlist-container">
+      <h2>🎵 Pick a Mood to Get a Playlist</h2>
+      <div className="emoji-selection">
+        {Object.keys(playlists).map((emoji) => (
+          <button key={emoji} className="emoji-button" onClick={() => setSelectedMood(emoji)}>
+            {emoji}
+          </button>
+        ))}
+      </div>
+
+      {selectedMood && (
+        <div className="playlist-link">
+          <h3>{playlists[selectedMood].name}</h3>
+          <a href={playlists[selectedMood].link} target="_blank" rel="noopener noreferrer">
+            🎧 Open Playlist
+          </a>
+        </div>
+      )}
+
+      <button className="back-button" onClick={() => navigate("/")}>
+        ⬅️ Go Back
+      </button>
     </div>
   );
 }

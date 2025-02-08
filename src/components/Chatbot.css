@@ -1,0 +1,51 @@
+.chatbot-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .chatbox {
+    height: 300px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  p.user {
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  p.bot {
+    text-align: left;
+    color: #4caf50;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #388e3c;
+  }
+  
