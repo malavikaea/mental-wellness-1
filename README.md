@@ -1,4 +1,4 @@
-#  🎯
+#  🎯  Mental Wellness Website with chatbot
 
 
 ## Basic Details
@@ -70,10 +70,7 @@ Page where user can click at any of the button and a playlist according to the m
 Spotify playlist that is opened
 
 
-# Build Photos
-![Team](Add photo of your team here)
-
-Components
+#Components
 Music recommendation component
 ![music component](https://github.com/user-attachments/assets/08c06113-b912-4dcf-b43f-b6957b9a055c)
 
@@ -81,11 +78,11 @@ Chatbot component
 ![chat bot component](https://github.com/user-attachments/assets/de8d6e9a-8958-49aa-911c-0671c45a3331)
 
 
-![Build]
+#Building
 ![Screenshot 2025-02-09 084251](https://github.com/user-attachments/assets/0554220e-ca5b-4473-8d4b-fdbf78017574)
 
 
-![Final]
+#Final
 ![Screenshot 2025-02-09 083827](https://github.com/user-attachments/assets/993af855-7913-4bb5-b3f5-7aaea847528a)
 
 
