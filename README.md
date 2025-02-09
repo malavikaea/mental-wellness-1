@@ -37,62 +37,66 @@ Hosting: Firebase Hosting for deploying the frontend and backend, ensuring fast 
 
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+Languages Used:
+  JavaScript
+  JSX (JavaScript XML)
+  CSS (for styling)
+
+Frameworks Used:
+  React.js(Frontend)
+
+Libraries Used:
+  Google Generative AI (for conversational AI integration)
+Tools Used:
+  Firebase (for deployment, hosting, and database)
+  Node.js(for backend server, if applicable)
+  Express.js(for backend server, if applicable)
+  Git (for version control)
+  GitHub (for repository hosting and CI/CD)
+  Visual Studio Code (for development environment)
 
 
+# Screenshots 
+![Screenshot 2025-02-09 083827](https://github.com/user-attachments/assets/3130be5a-a42b-4176-a65c-729105d99615)
+The home page where the user can either choose to chat with the bot or get music playlist recommended.
 
-### Implementation
-For Software:
-# Installation
-[commands]
+![Screenshot 2025-02-09 083947](https://github.com/user-attachments/assets/45910f2c-bc07-4ace-a3d2-f67a4909b7b6)
+The chat with AI bot
 
-# Run
-[commands]
+![Screenshot 2025-02-09 084011](https://github.com/user-attachments/assets/4298a061-bbaf-4480-89e5-a44faa59ef6d)
+Page where user can click at any of the button and a playlist according to the mood can be opened
 
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
+![Screenshot 2025-02-09 084047](https://github.com/user-attachments/assets/0ab472a4-9285-4484-ad34-f6198be4534e)
+Spotify playlist that is opened
 
 
 # Build Photos
 ![Team](Add photo of your team here)
 
+Components
+Music recommendation component
+![music component](https://github.com/user-attachments/assets/08c06113-b912-4dcf-b43f-b6957b9a055c)
 
-![Components](Add photo of your components here)
-*List out all components shown*
+Chatbot component
+![chat bot component](https://github.com/user-attachments/assets/de8d6e9a-8958-49aa-911c-0671c45a3331)
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![Build]
+![Screenshot 2025-02-09 084251](https://github.com/user-attachments/assets/0554220e-ca5b-4473-8d4b-fdbf78017574)
+
+
+![Final]
+![Screenshot 2025-02-09 083827](https://github.com/user-attachments/assets/993af855-7913-4bb5-b3f5-7aaea847528a)
+
+
 
 ### Project Demo
 # Video [https://drive.google.com/file/d/1iF_dvRrkVLydgKOj1ZfFcN0INTf7U1X7/view?usp=sharing](https://drive.google.com/file/d/1iF_dvRrkVLydgKOj1ZfFcN0INTf7U1X7/view?usp=sharing)
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Malavika E A: Contributed the home page,chat bot page and its tsyling using css
+- Lakshmi Nandana R: Contributed the music playlist recommendation page and deployment
 
----
-Made with ❤️ at TinkerHub
+
+
