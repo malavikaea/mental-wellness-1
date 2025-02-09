@@ -70,7 +70,7 @@ Page where user can click at any of the button and a playlist according to the m
 Spotify playlist that is opened
 
 
-#Components
+# Components
 Music recommendation component
 ![music component](https://github.com/user-attachments/assets/08c06113-b912-4dcf-b43f-b6957b9a055c)
 
