@@ -92,7 +92,7 @@ Chatbot component
 
 
 ## Team Contributions
-- Malavika E A: Contributed the home page,chat bot page and its tsyling using css
+- Malavika E A: Contributed the home page,chat bot page and its styling using css
 - Lakshmi Nandana R: Contributed the music playlist recommendation page and deployment
 
 
