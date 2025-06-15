@@ -3,8 +3,6 @@ import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import "./Chatbot.css";
 
-const API_KEY = "AIzaSyBhKLNnn2DrGoXwm-hOgJQamgTB1FvkfZw"; // ✅ Secure way to load API key
-
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash",
